@@ -66,7 +66,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(array){
-   
+  originalFlavors.length()
+   return is31Flavors
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -138,9 +139,14 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(array){
-    array.splice(28,1,"Rocky Road")
-        return array
+function removeFlavorByName(array,string){
+
+    for(let i = 0; i < array.length;i++){
+        if (array[i] >= (string)){
+            array.splice(i,1);
+        }
+    }
+       return array
 }
 
 
